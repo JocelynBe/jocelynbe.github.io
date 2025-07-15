@@ -1,6 +1,9 @@
 // Portfolio Website JavaScript - Jocelyn Beauchesne
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize shared navigation
+    initSharedNavigation();
+    
     // Navigation highlighting
     highlightActiveNavigation();
     
@@ -10,6 +13,44 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar transparency on scroll
     initNavbarScrollEffect();
 });
+
+/**
+ * Initialize shared navigation component
+ */
+function initSharedNavigation() {
+    const navContainer = document.getElementById('shared-nav');
+    
+    if (navContainer) {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        
+        navContainer.innerHTML = `
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><strong>JB</strong></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link ${currentPage === 'index.html' ? 'active' : ''}" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ${currentPage === 'experience.html' ? 'active' : ''}" href="experience.html">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ${currentPage === 'publications.html' ? 'active' : ''}" href="publications.html">Publications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ${currentPage === 'education.html' ? 'active' : ''}" href="education.html">Education</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        `;
+    }
+}
 
 
 

@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb5621e-cf18-4cb6-9815-b9152b7ad0ce" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/assets/EffectofFibrinogenconcentrateadministrationonearlymortalityintraumatichemorrhagicshock.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Resume_v2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/data_augmentation_with_gans_for_ocr.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/headshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/patents.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/resume.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="bbb5621e-cf18-4cb6-9815-b9152b7ad0ce" name="Changes" comment="UPDATES!!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,13 +112,22 @@
       <option name="project" value="LOCAL" />
       <updated>1752524678056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UPDATES!!">
+      <option name="closed" value="true" />
+      <created>1752529791431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752529791431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test modification" />
     <MESSAGE value="revert README" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="UPDATES!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATES!!" />
   </component>
 </project>
