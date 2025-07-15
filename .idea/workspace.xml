@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb5621e-cf18-4cb6-9815-b9152b7ad0ce" name="Changes" comment="updates" />
+    <list default="true" id="bbb5621e-cf18-4cb6-9815-b9152b7ad0ce" name="Changes" comment="adjust headshot pos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752539557115</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adjust headshot pos">
+      <option name="closed" value="true" />
+      <created>1752540321807</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752540321807</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,6 +145,7 @@
     <MESSAGE value="changes" />
     <MESSAGE value="UPDATES!!" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="adjust headshot pos" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust headshot pos" />
   </component>
 </project>

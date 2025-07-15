@@ -29,7 +29,7 @@
                     <button type="button" class="btn btn-outline-accent filter-btn active" data-filter="all">All Work</button>
                     <button type="button" class="btn btn-outline-accent filter-btn" data-filter="publication">Publications</button>
                     <button type="button" class="btn btn-outline-accent filter-btn" data-filter="patent">Patents</button>
-                    <button type="button" class="btn btn-outline-accent filter-btn" data-filter="project">Projects</button>
+                    <button type="button" class="btn btn-outline-accent filter-btn" data-filter="other">Other</button>
                 </div>
             </div>
 
@@ -47,10 +47,10 @@
                         <span class="badge bg-accent">Propensity Score</span>
                     </div>
                     <div class="mt-3">
-                        <strong>Authors:</strong> SR Hamada, R. Pirracchio, <u>J. Beauchesne</u><br>
+                        <strong>Authors:</strong> SR Hamada, R. Pirracchio, Jocelyn Beauchesne<br>
                         <strong>Journal:</strong> Journal of Trauma and Acute Care Surgery, 2020<br>
-                        <a href="assets/EffectofFibrinogenconcentrateadministrationonearlymortalityintraumatichemorrhagicshock.pdf" class="project-link" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View PDF
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/32068718/" class="project-link" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View paper
                         </a>
                     </div>
                 </div>
@@ -66,38 +66,24 @@
                         <span class="badge bg-accent">Data Augmentation</span>
                     </div>
                     <div class="mt-3">
-                        <strong>Authors:</strong> <u>Jocelyn Beauchesne</u> and Victor Storchan<br>
+                        <strong>Authors:</strong> Jocelyn Beauchesne and Victor Storchan<br>
                         <strong>Conference:</strong> International Conference on Document Analysis and Recognition (ICDAR), 2018<br>
-                        <a href="assets/data_augmentation_with_gans_for_ocr.pdf" class="project-link" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View PDF
+                        <a href="https://ieeexplore.ieee.org/document/8977988" class="project-link" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View Paper
                         </a>
                     </div>
                 </div>
 
                 <!-- Key Patents -->
                 <div class="project-item" data-category="patent">
-                    <div class="project-type">Patent • Hyperscience</div>
-                    <h3 class="project-title">Real Time Machine Learning For Guided Document Annotations</h3>
-                    <p class="project-description">Patented Active Learning approach that reduces annotation costs by 40% while maintaining accuracy through intelligent sample selection and real-time guidance.</p>
-                    <div class="project-tags">
-                        <span class="badge bg-accent">Active Learning</span>
-                        <span class="badge bg-accent">Document Processing</span>
-                        <span class="badge bg-accent">Machine Learning</span>
-                    </div>
-                    <div class="mt-3">
-                        <strong>Status:</strong> Filed 2023<br>
-                        <strong>Company:</strong> Hyperscience
-                    </div>
-                </div>
-
-                <div class="project-item" data-category="patent">
                     <div class="project-type">Patent • Rapid7</div>
                     <h3 class="project-title">Identifying high-influence features for model-detected anomalies</h3>
-                    <p class="project-description">Machine learning system for cybersecurity that identifies key features driving anomaly detection decisions, improving explainability and reducing false positives.</p>
+                    <p class="project-description">A machine learning system for cybersecurity that identifies key features driving anomaly detection decisions, improving explainability and reducing false positives.</p>
                     <div class="project-tags">
                         <span class="badge bg-accent">Anomaly Detection</span>
                         <span class="badge bg-accent">Cybersecurity</span>
                         <span class="badge bg-accent">Explainable AI</span>
+                        <span class="badge bg-accent">Machine Learning</span>
                     </div>
                     <div class="mt-3">
                         <strong>Status:</strong> Patent #12206699 - Granted January 21, 2025<br>
@@ -108,11 +94,12 @@
                 <div class="project-item" data-category="patent">
                     <div class="project-type">Patent • Rapid7</div>
                     <h3 class="project-title">Automated dimensionality reduction for machine learning anomaly detection pipeline</h3>
-                    <p class="project-description">Automated system for reducing high-dimensional security data to improve anomaly detection performance and computational efficiency.</p>
+                    <p class="project-description">A machine learning system for anomaly detection in computer networks that automates dimensionality reduction to optimize the performance and efficiency of the detection pipeline.</p>
                     <div class="project-tags">
+                        <span class="badge bg-accent">Anomaly Detection</span>
+                        <span class="badge bg-accent">Cybersecurity</span>
+                        <span class="badge bg-accent">Machine Learning</span>
                         <span class="badge bg-accent">Dimensionality Reduction</span>
-                        <span class="badge bg-accent">ML Pipeline</span>
-                        <span class="badge bg-accent">Automation</span>
                     </div>
                     <div class="mt-3">
                         <strong>Status:</strong> Patent #12182670 - Granted December 31, 2024<br>
@@ -121,68 +108,103 @@
                 </div>
 
                 <div class="project-item" data-category="patent">
-                    <div class="project-type">Patent • Abnormal Security</div>
+                    <div class="project-type">Patent • Rapid7</div>
+                    <h3 class="project-title">Machine learning system for detecting anomalies in hunt data</h3>
+                    <p class="project-description">A machine learning system designed to identify anomalies within cybersecurity 'hunt data', enabling security analysts to efficiently investigate potential threats.</p>
+                    <div class="project-tags">
+                        <span class="badge bg-accent">Anomaly Detection</span>
+                        <span class="badge bg-accent">Cybersecurity</span>
+                        <span class="badge bg-accent">Threat Hunting</span>
+                        <span class="badge bg-accent">Machine Learning</span>
+                    </div>
+                    <div class="mt-3">
+                        <strong>Status:</strong> Patent #12088600 - Granted September 10, 2024<br>
+                        <strong>Inventors:</strong> Jocelyn Beauchesne, John Lim Oh, Vasudha Shivamoggi, Roy Donald Hodgman
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="patent">
+                    <div class="project-type">Patent • Rapid7</div>
+                    <h3 class="project-title">Generating synthetic datapoints from observed datapoints for training machine learning models</h3>
+                    <p class="project-description">A system that generates synthetic data points from observed data to improve the training of machine learning models for anomaly detection, enhancing model robustness without requiring manual labeling.</p>
+                    <div class="project-tags">
+                        <span class="badge bg-accent">Machine Learning</span>
+                        <span class="badge bg-accent">Data Synthesis</span>
+                        <span class="badge bg-accent">Anomaly Detection</span>
+                        <span class="badge bg-accent">Unsupervised Learning</span>
+                    </div>
+                    <div class="mt-3">
+                        <strong>Status:</strong> Patent #12069079 - Granted August 20, 2024<br>
+                        <strong>Inventors:</strong> Jocelyn Beauchesne, John Lim Oh, Vasudha Shivamoggi, Roy Donald Hodgman
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="patent">
+                    <div class="project-type">Patent • Rapid7</div>
+                    <h3 class="project-title">Providing human-interpretable explanation for model-detected anomalies</h3>
+                    <p class="project-description">A machine learning anomaly detection system that provides human-interpretable explanations for detected anomalies, aiding security analysts in understanding and responding to threats.</p>
+                    <div class="project-tags">
+                        <span class="badge bg-accent">Anomaly Detection</span>
+                        <span class="badge bg-accent">Cybersecurity</span>
+                        <span class="badge bg-accent">Explainable AI</span>
+                        <span class="badge bg-accent">Human-Computer Interaction</span>
+                    </div>
+                    <div class="mt-3">
+                        <strong>Status:</strong> Patent #11853853 - Granted December 26, 2023<br>
+                        <strong>Inventors:</strong> Jocelyn Beauchesne, John Lim Oh, Vasudha Shivamoggi, Roy Donald Hodgman
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="patent">
+                    <div class="project-type">Patent • Rapid7</div>
+                    <h3 class="project-title">Generating machine learning data in salient regions of a feature space</h3>
+                    <p class="project-description">A system for generating machine learning training data specifically in 'salient regions' of a feature space, optimizing model learning and improving the accuracy of anomaly detection.</p>
+                    <div class="project-tags">
+                        <span class="badge bg-accent">Machine Learning</span>
+                        <span class="badge bg-accent">Data Generation</span>
+                        <span class="badge bg-accent">Feature Engineering</span>
+                        <span class="badge bg-accent">Anomaly Detection</span>
+                    </div>
+                    <div class="mt-3">
+                        <strong>Status:</strong> Patent #11509674 - Granted November 22, 2022<br>
+                        <strong>Inventors:</strong> Jocelyn Beauchesne, John Lim Oh, Vasudha Shivamoggi, Roy Donald Hodgman
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="patent">
+                    <div class="project-type">Patent • Abnormal Security Corporation</div>
                     <h3 class="project-title">Discovering graymail through real-time analysis of incoming email</h3>
-                    <p class="project-description">Real-time email analysis system for identifying graymail and improving email security threat detection through advanced machine learning techniques.</p>
+                    <p class="project-description">Techniques for identifying and processing graymail in real-time by analyzing incoming emails and user profiles, allowing for effective remedial actions to manage unwanted messages.</p>
                     <div class="project-tags">
                         <span class="badge bg-accent">Email Security</span>
+                        <span class="badge bg-accent">Graymail Detection</span>
                         <span class="badge bg-accent">Real-time Analysis</span>
-                        <span class="badge bg-accent">NLP</span>
+                        <span class="badge bg-accent">Cybersecurity</span>
                     </div>
                     <div class="mt-3">
                         <strong>Status:</strong> Patent #11683284 - Granted June 20, 2023<br>
-                        <strong>Company:</strong> Abnormal Security Corporation
+                        <strong>Inventors:</strong> Rami F. Habal, Kevin Lau, Sharan Dev Sankar, Yea So Jung, Dhruv Purushottam, Venkat Krishnamoorthi, Franklin X. Wang, Jeshua Alexis Bratman, Jocelyn Mikael Raphael Beauchesne, Abhijit Bagri, Sanjay Jeyakumar
                     </div>
                 </div>
 
-                <!-- Key Projects -->
-                <div class="project-item" data-category="project">
-                    <div class="project-type">Project • Sizzle AI</div>
-                    <h3 class="project-title">ML-Powered A/B Testing Framework</h3>
-                    <p class="project-description">Comprehensive testing framework enabling rapid experimentation and optimization, consistently boosting key business metrics by 5-10% across 20+ experiments.</p>
+                <div class="project-item" data-category="patent">
+                    <div class="project-type">Patent • Abnormal Security Corporation</div>
+                    <h3 class="project-title">Discovering graymail through real-time analysis of incoming email</h3>
+                    <p class="project-description">Techniques for identifying and processing graymail in real-time by analyzing incoming emails and user profiles, allowing for effective remedial actions to manage unwanted messages.</p>
                     <div class="project-tags">
-                        <span class="badge bg-accent">A/B Testing</span>
-                        <span class="badge bg-accent">Machine Learning</span>
-                        <span class="badge bg-accent">Product Analytics</span>
+                        <span class="badge bg-accent">Email Security</span>
+                        <span class="badge bg-accent">Graymail Detection</span>
+                        <span class="badge bg-accent">Real-time Analysis</span>
+                        <span class="badge bg-accent">Cybersecurity</span>
                     </div>
                     <div class="mt-3">
-                        <strong>Impact:</strong> 1M+ courses created, consistent 5-10% metric improvements<br>
-                        <strong>Role:</strong> Founding Research Engineer
+                        <strong>Status:</strong> Patent #11528242 - Granted December 13, 2022<br>
+                        <strong>Inventors:</strong> Rami F. Habal, Kevin Lau, Sharan Dev Sankar, Yea So Jung, Dhruv Purushottam, Venkat Krishnamoorthi, Franklin X. Wang, Jeshua Alexis Bratman, Jocelyn Mikael Raphael Beauchesne, Abhijit Bagri, Sanjay Jeyakumar
                     </div>
                 </div>
 
-                <div class="project-item" data-category="project">
-                    <div class="project-type">Project • Sizzle AI</div>
-                    <h3 class="project-title">LLM-Powered Content Generation Pipeline</h3>
-                    <p class="project-description">Scalable multi-stage pipeline for knowledge extraction, content generation, and retrieval using large language models to enable personalized learning experiences.</p>
-                    <div class="project-tags">
-                        <span class="badge bg-accent">LLMs</span>
-                        <span class="badge bg-accent">Pipeline Architecture</span>
-                        <span class="badge bg-accent">Content Generation</span>
-                        <span class="badge bg-accent">RAG</span>
-                    </div>
-                    <div class="mt-3">
-                        <strong>Technologies:</strong> PyTorch, transformers, langchain, llama_index<br>
-                        <strong>Scale:</strong> Serving 1M+ users
-                    </div>
-                </div>
-
-                <div class="project-item" data-category="project">
-                    <div class="project-type">Project • Hyperscience</div>
-                    <h3 class="project-title">Unsupervised Sampling for Annotation Optimization</h3>
-                    <p class="project-description">Research project developing unsupervised sampling approaches that reduced annotation time by 70% with no impact to model accuracy.</p>
-                    <div class="project-tags">
-                        <span class="badge bg-accent">Unsupervised Learning</span>
-                        <span class="badge bg-accent">Active Learning</span>
-                        <span class="badge bg-accent">Optimization</span>
-                    </div>
-                    <div class="mt-3">
-                        <strong>Impact:</strong> 70% reduction in annotation time<br>
-                        <strong>Role:</strong> Engineering Manager, Research Director
-                    </div>
-                </div>
-
-                <div class="project-item" data-category="project">
+                <!-- Other publications -->
+                <div class="project-item" data-category="other">
                     <div class="project-type">Mentorship • NYU</div>
                     <h3 class="project-title">Question Answering on Long Context</h3>
                     <p class="project-description">Mentored NYU Data Science Graduate students on developing advanced QA systems for long-context documents, resulting in best poster award.</p>
@@ -199,23 +221,27 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Awards -->
-                <div class="project-item" data-category="project">
-                    <div class="project-type">Award • MIT</div>
-                    <h3 class="project-title">#1 Place Citadel Datathon</h3>
-                    <p class="project-description">First place winner at the prestigious Citadel Datathon at MIT, demonstrating exceptional data science and machine learning skills in a competitive environment.</p>
+                <div class="project-item" data-category="other">
+                    <div class="project-type">Blog Post • Hyperscience</div>
+                    <h3 class="project-title">The Power of Pointer Networks</h3>
+                    <p class="project-description">Explores how Pointer Networks, a Deep Learning model, can be leveraged to automate data entry from semi-structured documents like invoices, even with diverse templates and limited labeled data. The post details the model's architecture, its application to combinatorial problems, and demonstrates high automation and accuracy rates for information extraction.</p>
                     <div class="project-tags">
-                        <span class="badge bg-accent">Data Science</span>
-                        <span class="badge bg-accent">Competition</span>
-                        <span class="badge bg-accent">MIT</span>
+                        <span class="badge bg-accent">Pointer Networks</span>
+                        <span class="badge bg-accent">Deep Learning</span>
+                        <span class="badge bg-accent">Machine Learning</span>
+                        <span class="badge bg-accent">Data Entry Automation</span>
+                        <span class="badge bg-accent">Semi-structured Documents</span>
+                        <span class="badge bg-accent">NLP</span>
+                        <span class="badge bg-accent">AI</span>
                     </div>
                     <div class="mt-3">
-                        <strong>Year:</strong> 2019<br>
-                        <strong>Institution:</strong> Massachusetts Institute of Technology
+                        <strong>Published:</strong> June 25, 2021<br>
+                        <strong>Author:</strong> Jocelyn Beauchesne<br>
+                        <a href="https://www.hyperscience.ai/blog/the-power-of-pointer-networks/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Read Blog Post
+                        </a>
                     </div>
                 </div>
-
             </div>
 
             <!-- Call to Action -->
