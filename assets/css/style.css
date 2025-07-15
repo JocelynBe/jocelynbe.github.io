@@ -101,8 +101,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 1px 3px var(--shadow-light);
 }
 
-
-
 .navbar-brand {
     font-family: 'Crimson Text', serif;
     font-size: 1.75rem;
@@ -110,11 +108,25 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color) !important;
     transition: all 0.3s ease;
     letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .navbar-brand:hover {
     color: var(--accent-color) !important;
     transform: scale(1.02);
+}
+
+.brand-text {
+    display: inline;
+}
+
+.brand-full {
+    display: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
 }
 
 .nav-link {
@@ -126,6 +138,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     position: relative;
     font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .nav-link:hover,
@@ -134,8 +149,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--quaternary-color);
     transform: translateY(-1px);
 }
-
-
 
 .nav-link.active::after {
     content: '';
@@ -149,18 +162,118 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1px;
 }
 
+/* Mobile Navigation Styles */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30, 27, 75, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+/* Mobile-specific nav link styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border-radius: 12px;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 20px var(--shadow-medium);
+    }
+    
+    .nav-link {
+        margin: 0.25rem 0;
+        padding: 1rem 1.5rem !important;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: var(--quaternary-color);
+        transform: translateX(5px);
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    .nav-link i {
+        width: 20px;
+        text-align: center;
+        color: var(--accent-color);
+    }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .brand-full {
+        display: inline;
+        font-size: 1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .brand-full {
+        display: inline;
+    }
+}
+
+/* Portrait orientation adjustments */
+@media (orientation: portrait) and (max-width: 991.98px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .brand-full {
+        display: none;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-width: 991.98px) {
+    .navbar-collapse {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     background: var(--gradient-background);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 50px; /* Account for fixed navbar */
+    display: flex;
+    align-items: center;
 }
 
-
+.hero-content {
+    width: 100%;
+    padding-top: var(--navbar-height, 80px);
+    padding-bottom: 2rem;
+    min-height: calc(100vh - var(--navbar-height, 80px));
+    display: flex;
+    align-items: center;
+}
 
 .hero-section .container {
     position: relative;
@@ -943,7 +1056,18 @@ h1, h2, h3, h4, h5, h6 {
         min-width: 140px;
     }
     
-
+    /* Mobile navigation adjustments */
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .brand-full {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {

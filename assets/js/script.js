@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Navbar transparency on scroll
     initNavbarScrollEffect();
+    
+    // Initialize dynamic navbar height
+    initDynamicNavbarHeight();
 });
 
 /**
@@ -26,29 +29,123 @@ function initSharedNavigation() {
         navContainer.innerHTML = `
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><strong>JB</strong></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <a class="navbar-brand" href="index.html">
+                        <strong class="brand-text">JB</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link ${currentPage === 'index.html' ? 'active' : ''}" href="index.html">Home</a>
+                                <a class="nav-link ${currentPage === 'index.html' ? 'active' : ''}" href="index.html">
+                                    <i class="fas fa-home d-lg-none"></i>
+                                    <span>Home</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ${currentPage === 'experience.html' ? 'active' : ''}" href="experience.html">Experience</a>
+                                <a class="nav-link ${currentPage === 'experience.html' ? 'active' : ''}" href="experience.html">
+                                    <i class="fas fa-briefcase d-lg-none"></i>
+                                    <span>Experience</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ${currentPage === 'publications.html' ? 'active' : ''}" href="publications.html">Publications</a>
+                                <a class="nav-link ${currentPage === 'publications.html' ? 'active' : ''}" href="publications.html">
+                                    <i class="fas fa-file-alt d-lg-none"></i>
+                                    <span>Publications</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ${currentPage === 'education.html' ? 'active' : ''}" href="education.html">Education</a>
+                                <a class="nav-link ${currentPage === 'education.html' ? 'active' : ''}" href="education.html">
+                                    <i class="fas fa-graduation-cap d-lg-none"></i>
+                                    <span>Education</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         `;
+        
+        // Initialize mobile-specific behaviors
+        initMobileNavigation();
+    }
+}
+
+/**
+ * Initialize mobile-specific navigation behaviors
+ */
+function initMobileNavigation() {
+    const navbar = document.querySelector('.navbar');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    if (navbar && navbarToggler && navbarCollapse) {
+        // Close mobile menu when clicking on a link
+        const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992) { // Bootstrap lg breakpoint
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        hide: true
+                    });
+                }
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target) && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    hide: true
+                });
+            }
+        });
+        
+        // Handle orientation change
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+                if (window.innerWidth >= 992) {
+                    navbarCollapse.classList.remove('show');
+                }
+            }, 100);
+        });
+    }
+}
+
+/**
+ * Initialize dynamic navbar height calculation
+ */
+function initDynamicNavbarHeight() {
+    const navbar = document.querySelector('.navbar');
+    
+    if (navbar) {
+        // Function to update navbar height
+        const updateNavbarHeight = () => {
+            const navbarHeight = navbar.offsetHeight;
+            document.documentElement.style.setProperty('--navbar-height', `${navbarHeight}px`);
+        };
+        
+        // Initial calculation
+        updateNavbarHeight();
+        
+        // Update on window resize
+        window.addEventListener('resize', updateNavbarHeight);
+        
+        // Update on orientation change
+        window.addEventListener('orientationchange', () => {
+            setTimeout(updateNavbarHeight, 100);
+        });
+        
+        // Update when mobile menu opens/closes
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse) {
+            const observer = new MutationObserver(updateNavbarHeight);
+            observer.observe(navbarCollapse, {
+                attributes: true,
+                attributeFilter: ['class']
+            });
+        }
     }
 }
 
