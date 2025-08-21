@@ -4,7 +4,7 @@ header:
   - text: |
       <span style="font-size: 1.1em; font-weight: bold;">Lead Research Engineer – Green Card Holder – 6+ years of experience</span>
   - text: <span class="iconify" data-icon="tabler:mail"></span> first.lastname@gmail.com
-    link: mailto:jocelyn.beauchesne@gmail.com
+    link: mailto:first.lastname@gmail.com
     newLine: true
   - text: <span class="iconify" data-icon="tabler:brand-linkedin"></span> linkedin.com/in/jocelyn-beauchesne
     link: https://linkedin.com/in/jocelyn-beauchesne
@@ -14,26 +14,28 @@ header:
 
 ## Professional Summary
 
-* Applied Scientist with 6+ years of experience delivering **impactful** ML Research and **scalable** AI systems.
+* Applied Scientist with 6+ years of experience building frontier AI systems and leading ML teams.
 
-* Dual Master's from **MIT** and **École Polytechnique.** 
+* Dual Master's from elite **MIT Operations Research Center** and **École Polytechnique**.
 
-* Proven track record elevating key **business metrics**, spearheading ML **innovation**, and shaping **product** strategy. 
+* Proven track record of translating **cutting-edge** ML research into **scalable products** that drive measurable **business impact**.
 
-* **Expert** in Generative AI, Data Science, and ML modeling. Former engineering **lead** at Hyperscience and Sizzle AI. 
+* Deep expertise in LLM applications, fine-tuning, and building agentic systems from conception to 1M+ users.
+
 
 ## Experience
 
 **Sizzle AI — Founding Research Engineer, Machine Learning**
   
-  *New York City, NY | 2024 - 2025*
+  *New York City, NY | 2024 - Present*
 
-- Partnered with the CEO (**ex-Meta VP of AI**), CTO and product team to lead core AI initiatives, driving platform growth from 0 to 1M+ courses created by users.
-- Launched ML-powered A/B testing framework; executed 20+ experiments that **consistently boosted** key business metrics by an average 5-10%
-- **Technical Leadership** 
-  - Architected **scalable** multi-stage pipelines powered by LLMs: knowledge extraction, content generation and retrieval
-  - Designed and implemented a **recommendation system** to optimize feed of learning materials 
-  - **Enabled team** with key development pipelines: fine-tuning , data generation, evaluation loops, monitoring and analytics
+- Partnered with the CEO (**ex-Meta VP of AI**), CTO and product, UXR and design counterparts to lead core AI initiatives, driving platform growth from 0 to 1M+ courses created by users.
+- **Owned end-to-end development of 18 features**, driving average metric improvements of 5-10% validated through A/B testing experiments
+- **Technical Leadership**: Building a Tutoring Agent 
+  - Knowledge Extraction: Built LLM-powered pipeline that decomposes educational content into atomic Knowledge Components (KCs) with vector DB storage and custom evaluation
+  - Autonomous Planning: Developed hierarchical curriculum planning with over **1M+** courses generated
+  - Grounded Generation: Engineered pipeline generating and evaluating **100M+** educational content with RAG
+  - Adaptive Recommendation: Implemented Recommendation algorithm that optimizes for engagement and learning through real-time mastery tracking
 
 <br/>
 
@@ -41,9 +43,12 @@ header:
   
   *New York City, NY | 2022 - 2023*
 
-- **Managed a team of 5 Senior ML Engineers**, reporting directly to the VP of AI (ex-Quora VP of AI) 
-- **Directed research** efforts for an unsupervised sampling approach leading to 70% reduction in annotation time with no impact to accuracy
-- Supervised improvements in **model training time** by 60% through parallelization and dynamic early stopping
+- **Managed a team of 5 Senior ML Engineers**, reporting directly to the VP of AI (**ex-Quora VP of AI**) and collaborating with **4 stakeholders**
+- **Shipped 6 major ML features**
+  - Annotation Copilot: Real-time Online Learning and Anomaly Detection
+  - Unsupervised data selection **reducing annotation costs by 70%** 
+  - Unstructured Extraction: Automatic fine-tuning to customers data and NER models
+  - Improved training time with a **60% speed-up** through parallelization and early stopping
 
 <br/>
 
@@ -51,8 +56,8 @@ header:
 
   *New York City, NY | 2022 - 2022*
 
-- Spearheaded Active Learning engine **patented** as [~P3] resulting in 40% reduction in annotation costs
-- **Mentored** a team of NYU Data Science Graduate students on Question Answering on Long Context, winning best poster award (see [~P4])
+- Stepped-up to lead Annotation Copilot development, **patented** as [~P3] with a **40% reduction** in annotation costs
+- **Mentored** a team of NYU Data Science Graduate students Capstone Project winning best poster award (see [~P4])
 - Improved **Transformer** based information extraction model accuracy on out-of-distribution sample by 20%
 
 <br/>
@@ -61,16 +66,8 @@ header:
 
   *New York City, NY | 2019 - 2020*
 
-- Improved automatic detection of advanced attacks by **+100% without drop in accuracy**, thus reducing load of costly experts annotators
-- Researched **Deep Learning** approaches to iteratively raise performance with **A/B testing** (NLP, ensembling, etc)
-
-<br/>
-
-**BNP Paribas – Research Intern**
-
-  *Artificial Intelligence Lab | 2018 - 2018*
-
-- **Published Research:** Leveraged Generative Adversarial Networks models to develop a noise-resistant Optical Character Recognition solution, achieving a 47% reduction in error rate compared to existing commercial solutions (see [~P2])
+- Improved detection of advanced email attacks by **100%** while maintaining false positive rate for enterprise customers
+- Rapidly iterated improvements to **Deep Learning** models (features, fine-tuning, ensembling) processing 10M+ emails daily and consistently evaluated improvements with **A/B testing** resulting in 2 patents [~P5]
 
 \newpage
 
@@ -142,12 +139,12 @@ Preparation Study For Highly Selective Entrance Exams To Grandes Écoles
     ~ *Team won best poster award*
     ~ [Link](https://www.hyperscience.com/blog/machine-learning-mentorship-qa-with-nyu-graduate-students/)
 
-[~P5]: **Filed Patent: Discovering Graymail Through Real-Time Analysis Of Incoming Email**
+[~P5]: **2 Granted Patent: Discovering Graymail Through Real-Time Analysis Of Incoming Email**
 
     Abnormal Security
     ~ *Filed 2020*
 
-[~P6]: **Filed 6 Patents on Unsupervised Anomaly Detection of vulnerabilities and cyber-attacks**
+[~P6]: **6 Granted Patents on Unsupervised Anomaly Detection of vulnerabilities and cyber-attacks**
 
     Rapid7
     ~ *Filed 2019*
@@ -164,5 +161,4 @@ Preparation Study For Highly Selective Entrance Exams To Grandes Écoles
 
 **Languages:** <span class="iconify" data-icon="ion:language"></span> English (Fluent), French (Native), Spanish (Conversational)
 
-**Misc:** <span class="iconify" data-icon="game-icons:judo"></span> Judo Black belt, <span class="iconify" data-icon="tabler:camera"></span> Photography
-
+**Misc:** <span class="iconify" data-icon="game-icons:judo"></span> Judo Black belt, KiteSurfing
